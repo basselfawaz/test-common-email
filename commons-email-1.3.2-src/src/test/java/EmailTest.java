@@ -86,3 +86,11 @@ public class EmailTest {
 		
 		email.getMailSession();
 	}
+	
+	@Test
+	public void getSentDate() {
+		
+		email.setSentDate(new Date(8));
+		
+		assertEquals(new Date(8), email.getSentDate());
+	}
