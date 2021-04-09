@@ -45,3 +45,11 @@ public class EmailTest {
 		
 		assertEquals(1, email.getHeaders().size());
 	}
+
+	@Test
+	public void testAddReplyTo() throws Exception {
+		
+		email.addReplyTo(TEST_EMAILS[1], Test_Names[2]);
+		
+		assertEquals(1, email.getReplyToAddresses().size());
+	}
