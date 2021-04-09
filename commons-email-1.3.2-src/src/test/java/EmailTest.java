@@ -94,3 +94,17 @@ public class EmailTest {
 		
 		assertEquals(new Date(8), email.getSentDate());
 	}
+
+		@Test 
+	public void getSentDateTestTwo() {
+		email.getSentDate();
+	}
+
+	@Test
+	public void testGetSocketConnectionTimeOut() {
+		
+		int time = 87;
+		email.setSocketConnectionTimeout(time);
+		
+		assertEquals(time, email.getSocketConnectionTimeout());
+	}
