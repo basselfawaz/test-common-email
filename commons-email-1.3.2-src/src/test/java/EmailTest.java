@@ -76,3 +76,13 @@ public class EmailTest {
      	
 		email.buildMimeMessage();
 	}
+
+		@Test
+	public void mailSession() throws EmailException {
+		
+		email.setHostName("testHost");
+		email.setAuthentication("userName", "password");
+		email.setBounceAddress("newbounce@p.com");
+		
+		email.getMailSession();
+	}
