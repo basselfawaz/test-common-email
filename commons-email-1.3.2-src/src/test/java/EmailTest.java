@@ -53,3 +53,12 @@ public class EmailTest {
 		
 		assertEquals(1, email.getReplyToAddresses().size());
 	}
+	
+	@Test
+	public void hostNameTest() {
+		
+		email.setHostName("Local Host");
+		String hostname = email.getHostName();
+		
+		assertEquals("LocalHost", hostname);
+	}
