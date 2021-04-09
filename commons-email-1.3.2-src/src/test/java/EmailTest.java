@@ -108,3 +108,9 @@ public class EmailTest {
 		
 		assertEquals(time, email.getSocketConnectionTimeout());
 	}
+	@Test
+	public void setFrom() throws Exception {
+		
+	email.setFrom("BaselFawaz@hoobly.com");
+			
+	}
